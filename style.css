@@ -1,0 +1,155 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+.container {
+  width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.all-container {
+}
+/* Header  */
+.header {
+  min-height: 750px;
+  background-image: url(./image/section-gb.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: gray;
+}
+
+.header-logo {
+  color: #111111;
+  font-size: 36px;
+  letter-spacing: 8px;
+  margin-left: 50px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.header-list {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 220px;
+}
+.header-list-item {
+}
+.header-icon {
+  fill: #111111;
+}
+.header-icon-list {
+  display: flex;
+  gap: 20px;
+}
+.header-icon-item {
+}
+/* Hero section */
+.hero-section {
+  padding: 188px 0;
+}
+.hero-title {
+  display: block;
+  margin-bottom: 50px;
+}
+.hero-title span {
+  display: block;
+  margin-left: 170px;
+}
+.hero-section {
+}
+.hero-span {
+  color: #111111;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+.hero-paragraph {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  margin-bottom: 50px;
+  margin-left: 170px;
+}
+.btn {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  background-color: #111111;
+  line-height: 24px;
+  letter-spacing: 4%;
+  margin-left: 170px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #ffffff;
+  color: #111111;
+}
+/* modern section */
+.modern-section {
+  color: #ffffff;
+  background-color: #111111;
+}
+.modern-list {
+  display: flex;
+  gap: 40px;
+}
+.modern-list-item {
+  flex-basis: calc((100% - 40px * 3) / 4);
+}
+.modern-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.modern-paragraph {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  margin-bottom: 30px;
+}
