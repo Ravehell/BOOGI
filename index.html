@@ -25,10 +25,18 @@
         <nav class="header-nav">
           <a class="header-logo" href="./index.html">BOOGI</a>
           <ul class="header-list">
-            <li class="header-list-item">Collection</li>
-            <li class="header-list-item">For a woman</li>
-            <li class="header-list-item">For a man</li>
-            <li class="header-list-item">About the brand</li>
+            <li class="header-list-item">
+              <a class="header-list-link" href="#Collection">Collection</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-link" href="">For a woman</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-link" href="">For a man</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-link" href="">About the brand</a>
+            </li>
           </ul>
 
           <ul class="header-icon-list">
@@ -59,28 +67,336 @@
         <button class="btn" type="button">To the collection</button>
       </section>
     </header>
-    <!-- Modern section -->
-    <section class="modern-section">
-      <div class="container">
-        <ul class="modern-list">
-          <li class="modern-list-item">
-            <h2 class="modern-title">Modern design</h2>
-            <p class="modern-paragraph">Trendy everyday styles</p>
-          </li>
-          <li class="modern-list-item">
-            <h2 class="modern-title">UV400 protection</h2>
-            <p class="modern-paragraph">Reliable protection for your eyes</p>
-          </li>
-          <li class="modern-list-item">
-            <h2 class="modern-title">Premium materials</h2>
-            <p class="modern-paragraph">Quality you can feel</p>
-          </li>
-          <li class="modern-list-item">
-            <h2 class="modern-title">24 month warranty</h2>
-            <p class="modern-paragraph">We are confident in your quality</p>
-          </li>
-        </ul>
+    <main>
+      <!-- Modern section -->
+      <section class="modern-section">
+        <div class="container">
+          <ul class="modern-list">
+            <li class="modern-list-item">
+              <div class="modern-list-icon">
+                <svg class="header-icon" width="100" height="100">
+                  <use href="./icon.svg#icon-glasses"></use>
+                </svg>
+              </div>
+              <h2 class="modern-title">Modern design</h2>
+              <p class="modern-paragraph">Trendy everyday styles</p>
+            </li>
+            <li class="modern-list-item">
+              <div class="modern-list-icon">
+                <svg class="header-icon" width="100" height="100">
+                  <use href="./icon.svg#icon-uv"></use>
+                </svg>
+              </div>
+              <h2 class="modern-title">UV400 protection</h2>
+              <p class="modern-paragraph">Reliable protection for your eyes</p>
+            </li>
+            <li class="modern-list-item">
+              <div class="modern-list-icon">
+                <svg class="header-icon" width="100" height="100">
+                  <use href="./icon.svg#icon-diamond"></use>
+                </svg>
+              </div>
+              <h2 class="modern-title">Premium materials</h2>
+              <p class="modern-paragraph">Quality you can feel</p>
+            </li>
+            <li class="modern-list-item">
+              <div class="modern-list-icon">
+                <svg class="header-icon" width="100" height="100">
+                  <use href="./icon.svg#icon-bag"></use>
+                </svg>
+              </div>
+              <h2 class="modern-title">24 month warranty</h2>
+              <p class="modern-paragraph">We are confident in your quality</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Collection section -->
+      <section class="collection-section" id="Collection">
+        <div class="container">
+          <h2 class="collection-title">Collection</h2>
+          <ul class="collection-list">
+            <li class="collection-list-item">
+              <img
+                src="./image/pink.jpg"
+                alt="pink glasses"
+                width="600"
+                height="400"
+              />
+              <h3 class="collection-subtitle">Optical Collection</h3>
+              <p class="collection-paragraph">
+                Stylish frames for everyday use
+              </p>
+              <button class="btn-collection" type="button">
+                To the collection
+                <svg class="collection-icon" width="24" height="24">
+                  <use href="./icon.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="collection-list-item">
+              <img
+                src="./image/black2.jpg"
+                alt="black glasses"
+                width="600"
+                height="400"
+              />
+              <h3 class="collection-subtitle">SunGlasses Colection</h3>
+              <p class="collection-paragraph">
+                Sun protection without compromising on style
+              </p>
+              <button class="btn-collection" type="button">
+                To the collection
+                <svg class="collection-icon" width="24" height="24">
+                  <use href="./icon.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="collection-list-item">
+              <img
+                src="./image/green.jpg"
+                alt="green glasses"
+                width="600"
+                height="40"
+              />
+              <h3 class="collection-subtitle">Limited Collors</h3>
+              <p class="collection-paragraph">
+                Exclusive colors and limited editions
+              </p>
+              <button class="btn-collection" type="button">
+                To the collection
+                <svg class="collection-icon" width="24" height="24">
+                  <use href="./icon.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- About the store section -->
+      <section class="store-section">
+        <div class="container store-container">
+          <img
+            class="store-img"
+            src="./image/boogi.jpg"
+            alt="Boogi store"
+            width="800"
+            height="400"
+          />
+          <div class="store-content">
+            <h2 class="store-title">Our store</h2>
+            <p class="store-paragraph">
+              Boogi Eyawear Store - this is where style meets quality. We’ll
+              help you choose the perfect glasses and ensure your comfort.
+            </p>
+            <button class="btn-store" type="button">Find a store</button>
+            <ul class="store-address-list">
+              <li class="store-address-item">
+                <p class="store-address">
+                  <svg class="store-icon" width="24" height="24">
+                    <use href="./icon.svg#icon-geo"></use>
+                  </svg>
+                  Oxford Street, 112, London
+                </p>
+              </li>
+              <li class="store-address-item">
+                <a class="store-link" href="">
+                  <svg class="store-icon" width="24" height="24">
+                    <use href="./icon.svg#icon-time"></use>
+                  </svg>
+                  We work every day 10.00 - 21.00
+                </a>
+              </li>
+            </ul>
+            <address>
+              <ul class="address-list">
+                <li class="address-list-item">
+                  <a class="address-link" href="tel:+442012345678">
+                    <svg class="store-icon" width="24" height="24">
+                      <use href="./icon.svg#icon-phone"></use>
+                    </svg>
+                    +44 20 1234 5678
+                  </a>
+                </li>
+                <li class="address-list-item">
+                  <a class="address-link" href="mailto:hello@boogi.com">
+                    <svg class="store-icon" width="24" height="24">
+                      <use href="./icon.svg#icon-email"></use>
+                    </svg>
+                    hello@boogi.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4965.689922196925!2d-0.13837162301577524!3d51.516060310070245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2b5cd149dd%3A0x1f09db73a5ef968!2zMTEyIE94Zm9yZCBTdCwgTG9uZG9uIFcxRCAxTFMsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1783501004600!5m2!1sru!2sua"
+            width="450"
+            height="280"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Rewievs -->
+      <section class="rewievs-section">
+        <div class="container">
+          <h2 class="collection-title">What our clients say</h2>
+          <ul class="rewievs-list">
+            <li class="rewievs-list-item">
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <h3 class="rewievs-title">
+                The most stylish glasses I’ve ever worn. They look expensive but
+                are reasonably priced.
+              </h3>
+              <p class="rewievs-paragraph">Jackob, Liverpool</p>
+            </li>
+            <li class="rewievs-list-item">
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <h3 class="rewievs-title">
+                I really liked the service. They helped me pick out frames in
+                literally 10 minutes.
+              </h3>
+              <p class="rewievs-paragraph">Emma, London</p>
+            </li>
+            <li class="rewievs-list-item">
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <svg class="store-icon" width="24" height="24">
+                <use href="./icon.svg#icon-star"></use>
+              </svg>
+              <h3 class="rewievs-title">
+                Eye-catching models that really grab attention. I’ve already
+                ordered a second pair.
+              </h3>
+              <p class="rewievs-paragraph">Edward, Nottingham</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a class="footer-logo" href="./index.html">BOOGI</a>
+
+          <p class="footer-slogan">BE BOLD. BE YOU.</p>
+
+          <ul class="footer-social">
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./icon.svg#icon-tiktok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <p class="footer-copy">© 2026 Boogi Eyewear. All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3 class="footer-title">Collections</h3>
+            <ul class="footer-list">
+              <li><a href="#">Optical Collection</a></li>
+              <li><a href="#">Sunglasses Collection</a></li>
+              <li><a href="#">Limited Colors</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-title">For Customers</h3>
+            <ul class="footer-list">
+              <li><a href="#">Delivery & Payment</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-title">About the Brand</h3>
+            <ul class="footer-list">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Materials</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Collaboration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-title">Contacts</h3>
+
+            <address class="footer-address">
+              <ul class="footer-list">
+                <li><a href="tel:+442012345678">+44 20 1234 5678</a></li>
+                <li>
+                  <a href="mailto:hello@boogi.com">hello@boogi.com</a>
+                </li>
+                <li>Oxford Street, 112, London</li>
+              </ul>
+            </address>
+          </div>
+        </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
