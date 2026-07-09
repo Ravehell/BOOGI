@@ -38,42 +38,69 @@ button {
   padding: 0 60px;
 } */
 .container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+/* .container {
+  width: 100%;
   min-width: 320px;
   max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 768px;
+    padding: 0 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1440px;
-    width: 100%;
     padding: 0 60px;
   }
-}
+} */
 /* Header  */
 .header {
   min-height: 750px;
-  background-image: url(./image/section-gb.PNG);
+  background-image: url(./image/mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: gray;
 }
-
+@media only screen and (min-width: 1200px) {
+  .header {
+    background-image: url(./image/section-gb.PNG);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    background-image: url(./image/tab.jpg);
+  }
+}
 .header-logo {
   color: #111111;
   font-size: 36px;
   letter-spacing: 8px;
   margin-left: 50px;
+}
+@media only screen and (max-width: 767.98px) {
+  .header-logo {
+    margin-left: 0;
+  }
 }
 .header-nav {
   display: flex;
@@ -86,6 +113,11 @@ button {
   gap: 30px;
   align-items: center;
   margin-right: 220px;
+}
+@media only screen and (max-width: 767.98px) {
+  .header-list {
+    display: none;
+  }
 }
 .header-list-link {
   color: #111111;
@@ -106,13 +138,23 @@ button {
   display: flex;
   gap: 20px;
 }
+@media only screen and (max-width: 767.98px) {
+  .header-icon-list {
+    display: none;
+  }
+}
 .header-icon:hover,
 .header-icon:focus {
   fill: #ffffff;
 }
 /* Hero section */
 .hero-section {
-  padding: 188px 0;
+  padding: 100px 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding: 188px 0;
+  }
 }
 .hero-title {
   display: block;
@@ -120,7 +162,12 @@ button {
 }
 .hero-title span {
   display: block;
-  margin-left: 170px;
+}
+@media only screen and (min-width: 1200px) {
+  .hero-title span {
+    margin-left: 170px;
+    margin-bottom: 50px;
+  }
 }
 .hero-section {
 }
@@ -131,15 +178,28 @@ button {
   line-height: 100%;
   letter-spacing: -2%;
 }
-.hero-paragraph {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 2%;
-  margin-bottom: 50px;
-  margin-left: 170px;
+
+@media only screen and (max-width: 767.98px) {
+  .hero-paragraph {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-paragraph {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 2%;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-paragraph {
+    margin-left: 170px;
+  }
 }
 .btn {
+  display: block;
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
@@ -148,7 +208,12 @@ button {
   background-color: #111111;
   line-height: 24px;
   letter-spacing: 4%;
-  margin-left: 170px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1200px) {
+  .btn {
+    margin-left: 170px;
+  }
 }
 .btn:hover,
 .btn:focus {
@@ -290,6 +355,24 @@ button {
   gap: 120px;
   align-items: center;
 }
+@media only screen and (max-width: 767.98px) {
+  .store-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .store-content {
+    align-items: center;
+  }
+  .store-address,
+  .store-link,
+  address a {
+    justify-content: center;
+  }
+  .store-img {
+    max-width: 100%;
+  }
+}
+
 .store-content {
   display: flex;
   flex-direction: column;
@@ -367,16 +450,46 @@ address a {
 /* Rewievs section */
 
 .rewievs-list {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .rewievs-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .rewievs-list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .rewievs-list-item {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 .rewievs-list-item {
   background-color: #d3d1c6;
   padding: 24px;
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+.reviews-h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 28px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-h2 {
+    line-height: 25x;
+  }
 }
 .rewievs-title {
   font-weight: 500;
@@ -385,6 +498,7 @@ address a {
   letter-spacing: 2%;
   margin-bottom: 20px;
 }
+
 .rewievs-paragraph {
   font-weight: 400;
   font-size: 16px;
@@ -400,10 +514,21 @@ address a {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: center;
+  text-align: center; */
+  gap: 40px;
+  /* justify-content: space-between; */
   align-items: flex-start;
 }
-
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 .footer-left {
   width: 260px;
 }
@@ -428,7 +553,9 @@ address a {
   gap: 16px;
   margin-bottom: 30px;
 }
-
+.footer-icons-list {
+  fill: #ffffff;
+}
 .footer-social a {
   color: #ffffff;
 }
@@ -440,9 +567,18 @@ address a {
 
 .footer-right {
   display: flex;
-  gap: 70px;
+  flex-direction: column;
+  gap: 32px;
+  /* display: flex;
+  gap: 70px; */
 }
-
+@media only screen and (min-width: 1200px) {
+  .footer-right {
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+  }
+}
 .footer-column {
   min-width: 170px;
 }
