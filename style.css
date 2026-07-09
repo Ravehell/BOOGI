@@ -74,7 +74,9 @@ button {
 } */
 /* Header  */
 .header {
-  min-height: 750px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url(./image/mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,11 +97,22 @@ button {
   color: #111111;
   font-size: 36px;
   letter-spacing: 8px;
-  margin-left: 50px;
+  margin-left: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 767.98px) {
   .header-logo {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .header-logo {
+    margin-left: 20px;
   }
 }
 .header-nav {
@@ -114,7 +127,12 @@ button {
   align-items: center;
   margin-right: 220px;
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 1199px) {
+  .header-list {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 1199px) {
   .header-list {
     display: none;
   }
@@ -138,7 +156,7 @@ button {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 1199px) {
   .header-icon-list {
     display: none;
   }
@@ -149,7 +167,12 @@ button {
 }
 /* Hero section */
 .hero-section {
-  padding: 100px 0;
+  /* display: flex;
+  flex-direction: column;
+  padding: 100px 0; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
   .hero-section {
@@ -159,6 +182,16 @@ button {
 .hero-title {
   display: block;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 767.98px) {
+  .hero-title {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    margin-left: 20px;
+  }
 }
 .hero-title span {
   display: block;
@@ -191,11 +224,12 @@ button {
     line-height: 1.2;
     letter-spacing: 2%;
     margin-bottom: 50px;
+    margin-left: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-paragraph {
-    margin-left: 170px;
+    margin-left: 195px;
   }
 }
 .btn {
@@ -210,9 +244,20 @@ button {
   letter-spacing: 4%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 767.98px) {
+  .btn {
+    margin-bottom: 40px;
+    margin-top: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    margin-left: 100px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .btn {
-    margin-left: 170px;
+    margin-left: 195px;
   }
 }
 .btn:hover,
@@ -749,7 +794,7 @@ address a {
   outline: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .menu-toggle {
     display: none;
   }
