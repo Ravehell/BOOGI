@@ -414,3 +414,119 @@ address a {
 .footer-address {
   font-style: normal;
 }
+/* Modal window */
+.backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.5);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 48px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  width: 800px;
+  height: 780px;
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.modal-btn-icon {
+  stroke: #111111;
+}
+.container-name-pass {
+  display: flex;
+  gap: 24px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.modal-form-div {
+  width: 100%;
+}
+.form-title {
+  display: inline-block;
+  color: #111111;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.form-modal-label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  margin-bottom: 10px;
+}
+.modal-from-input {
+  width: 100%;
+  padding: 22px 24px;
+  border-radius: 10px;
+  outline: transparent;
+  border: 2px solid rgba(17, 17, 17, 0.5);
+
+  margin-bottom: 30px;
+}
+.modal-form-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 22px 24px;
+  font-size: 18px;
+  outline: transparent;
+  letter-spacing: -0.02em;
+  border-radius: 13px;
+  border: 2px solid rgba(17, 17, 17, 0.5);
+  resize: none;
+  margin-bottom: 30px;
+}
+.modal-form-link {
+  color: #2527b3;
+  text-decoration: underline;
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+}
+.form-desc {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-form-button {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  background-color: #111111;
+  line-height: 24px;
+  letter-spacing: 4%;
+  margin-top: 20px;
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: #ffffff;
+  color: #111111;
+}
