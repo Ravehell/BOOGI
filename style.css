@@ -31,13 +31,34 @@ button {
   border: none;
   cursor: pointer;
 }
-.container {
+/* .container {
   width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 60px;
+} */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 60px;
+  }
+}
 /* Header  */
 .header {
   min-height: 750px;
@@ -142,12 +163,31 @@ button {
 }
 .modern-list {
   display: flex;
+  flex-direction: column;
   gap: 40px;
-  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .modern-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modern-list-item {
+    flex-basis: calc((100% - 40px) / 2);
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .modern-list-item {
+    flex-basis: calc((100% - 40px * 3) / 4);
+  }
 }
 .modern-list-item {
-  flex-basis: calc((100% - 40px * 3) / 4);
   text-align: center;
+  width: 100%;
 }
 .modern-title {
   font-weight: 400;
@@ -180,11 +220,31 @@ button {
   margin-bottom: 30px;
 }
 .collection-list {
-  display: flex;
+  /* display: flex;
   gap: 40px;
   text-align: center;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+}
+@media only screen and (min-width: 768px) {
+  .collection-list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .collection-list-item {
+    width: calc((100% - 40px) / 2);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .collection-list-item {
+    width: calc((100% - 40px * 2) / 3);
+  }
 }
 .collection-subtitle {
   font-weight: 500;
