@@ -24,6 +24,15 @@
       <div class="container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html">BOOGI</a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-menu-icon" width="28" height="28">
+              <use href="./icon.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
           <ul class="header-list">
             <li class="header-list-item">
               <a class="header-list-link" href="#Collection">Collection</a>
@@ -233,6 +242,7 @@
             </address>
           </div>
           <iframe
+            class="store-geo"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4965.689922196925!2d-0.13837162301577524!3d51.516060310070245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2b5cd149dd%3A0x1f09db73a5ef968!2zMTEyIE94Zm9yZCBTdCwgTG9uZG9uIFcxRCAxTFMsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1783501004600!5m2!1sru!2sua"
             width="450"
             height="280"
@@ -327,7 +337,7 @@
 
           <ul class="footer-social">
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/" target="_blank">
                 <svg class="footer-icons-list" width="20" height="20">
                   <use href="./icon.svg#icon-instagram"></use>
                 </svg>
@@ -335,7 +345,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/?locale=" target="_blank">
                 <svg class="footer-icons-list" width="20" height="20">
                   <use href="./icon.svg#icon-facebook"></use>
                 </svg>
@@ -343,7 +353,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://www.tiktok.com/uk-UA/" target="_blank">
                 <svg class="footer-icons-list" width="20" height="20">
                   <use href="./icon.svg#icon-tiktok"></use>
                 </svg>
@@ -496,6 +506,73 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-icon-close" width="28" height="28">
+          <use href="./icon.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="" class="link">Collection</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="" class="link">For Man</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="" class="link">For Woman</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="" class="link">About the brand</a>
+        </li>
+      </ul>
+      <ul class="footer-social mobile-menu-socials">
+        <li>
+          <a
+            class="mobile-socials-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="footer-icons-list" width="24" height="24">
+              <use href="./icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="mobile-socials-link"
+            href="https://www.facebook.com/?locale="
+            target="_blank"
+          >
+            <svg class="footer-icons-list" width="24" height="24">
+              <use href="./icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="mobile-socials-link"
+            href="https://www.tiktok.com/uk-UA/"
+            target="_blank"
+          >
+            <svg class="footer-icons-list" width="24" height="24">
+              <use href="./icon.svg#icon-tiktok"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./modal.js" defer></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js" defer></script>
   </body>
 </html>
